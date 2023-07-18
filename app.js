@@ -13,7 +13,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
 
-mongoose.connect("mongodb+srv://saidelgy94:saikumar@cluster0.bo3stvr.mongodb.net/todolistDB"); //if todo list is not present it will create a new database called todolistDB
+mongoose.connect("mongodb+srv://saidelgy94:test123@cluster0.bo3stvr.mongodb.net/todolistDB"); //if todo list is not present it will create a new database called todolistDB
 
 const itemSchema={
   name: String
