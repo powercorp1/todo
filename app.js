@@ -138,20 +138,10 @@ app.get("/work",function(req,res){
 
 });
 
-app.listen(3000, function () {
-  console.log("server is running");
-});
-/*
-  
-  var day= today.toLocaleString("en-US",options);
-  var today = new Date();
-  var currentDay = today.getDay();
-  var day = "";
-  const options={
-    weekday:"long",
-    day: "numeric",
-    month: "long"
-  };
+const PORT = process.env.PORT || 3000;
 
-    , newListItem:items
-*/
+
+
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
