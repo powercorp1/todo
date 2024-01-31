@@ -21,7 +21,7 @@ const itemSchema={
 const Item =mongoose.model("item",itemSchema); //item will automatically be formatted to items (lowdash: remember)
 
 const item1= new Item({
-  name:"Welcome to your todolist"
+  name:"Sai Kumar"
 });
 const item2= new Item({
   name:"hit this to add new"
